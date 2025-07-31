@@ -106,6 +106,9 @@ incode push --dry
 
 A workflow that pulls the latest items from two RSS feeds, and sends them to a Slack channel.
 
+<img width="864" height="385" alt="image" src="https://github.com/user-attachments/assets/b6a2b095-eaef-4ddb-8d2f-fa1460f4f435" />
+
+
 ```typescript
 import { Workflow, multi, RssTriggerNode, SlackNode, Credentials } from "incode";
 
@@ -140,6 +143,7 @@ It can be triggered either manually or via a webhook. It fetches the latest plan
 If the total population is over 8 billion, it replies: “Oh, that's a lot of people! I mean aliens...”
 Otherwise, it responds: “That's nothing, Earth has more people!”
 
+<img width="1180" height="441" alt="image" src="https://github.com/user-attachments/assets/a0fee001-c0c4-48f8-92d7-80660edc6064" />
 
 ```typescript
 import {
