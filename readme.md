@@ -4,6 +4,21 @@ InCode is a TypeScript framework for building, organizing, and deploying workflo
 Design complex workflows using a readable, composable API, manage them in a structured folder hierarchy, and push updates directly to your automation platform.
 inCode brings modern developer tools - version control, code reviews, reusability, and CI/CD - to workflow automation.
 
+## 📋 Table of Contents
+
+- [Introducing n8n InCode](#introducing-n8n-incode)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🚀 Getting Started](#-getting-started)
+    - [1. **Install inCode**](#1-install-incode)
+    - [2. **Initialize Your Project**](#2-initialize-your-project)
+    - [3. **Create Your First Workflow**](#3-create-your-first-workflow)
+    - [4. **Connect to Your n8n Instance**](#4-connect-to-your-n8n-instance)
+    - [5. **Deploy Your Workflow**](#5-deploy-your-workflow)
+    - [6. **Next Steps**](#6-next-steps)
+  - [✨ Examples](#-examples)
+    - [1. **RSS Feed to Slack**](#1-rss-feed-to-slack)
+    - [2. **StarWars API Population Checker**](#2-starwars-api-population-checker)
+  - [📁 Folder Structure](#-folder-structure)
 
 ## 🚀 Getting Started
 
@@ -91,8 +106,6 @@ incode push --dry
 
 A workflow that pulls the latest items from two RSS feeds, and sends them to a Slack channel.
 
-<img width="864" height="385" alt="image" src="https://github.com/user-attachments/assets/b6a2b095-eaef-4ddb-8d2f-fa1460f4f435" />
-
 ```typescript
 import { Workflow, multi, RssTriggerNode, SlackNode, Credentials } from "incode";
 
@@ -127,7 +140,6 @@ It can be triggered either manually or via a webhook. It fetches the latest plan
 If the total population is over 8 billion, it replies: “Oh, that's a lot of people! I mean aliens...”
 Otherwise, it responds: “That's nothing, Earth has more people!”
 
-<img width="1180" height="441" alt="image" src="https://github.com/user-attachments/assets/a0fee001-c0c4-48f8-92d7-80660edc6064" />
 
 ```typescript
 import {
